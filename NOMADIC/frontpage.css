@@ -1,0 +1,72 @@
+body,html
+{
+background: url("frontpage.png");
+background-repeat: no-repeat;
+background-size: cover;
+width: 100%;
+height: 100%;
+}
+
+.animate{
+background-size: cover;
+}
+
+
+h1
+{
+  position:absolute;
+  left:20%;
+  top:20%;
+  font-size: 65px;
+  text-decoration-line:underline;
+  text-align: center;
+  display: inline-block;
+}
+
+
+
+.login-button {
+  background-color: #555555; /* black */
+  border:double;
+  color: white;
+  padding: 14px 40px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 4px;
+  position:absolute;
+  left:45%;
+  top:70%;
+  transition: 2s;
+  cursor: pointer;
+
+}
+.sign-up-button{
+  background-color: #555555; /* black */
+  border:double;
+  color: white;
+  padding: 14px 40px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 4px;
+  position:absolute;
+  left:55%;
+  top:70%;
+  transition: 2s;
+  cursor: pointer;
+}
+.sign-up-button:hover,
+.login-button:hover{
+  transform: scale(1.1);
+	background-color: pink;
+}
+#footer {
+    position: absolute;
+    bottom: 0px;
+    background-color: white;
+    width: 100%;
+    text-align: center;
+}

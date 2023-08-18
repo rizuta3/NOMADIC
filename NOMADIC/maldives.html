@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CSS</title>
+	<link rel="stylesheet" type="text/css" href="maldives.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+</head>
+
+<body>
+		<h1>NOMADIC :FREEDOM TO ENJOY YOURSELF</h1>
+		<div class="topnav">
+		<nav>	
+		<ul>
+		        <li><a href="home.php">HOME</a></li> 
+				
+				<li><a href="family.html">FAMILY PACKAGES</a></li>
+				<li><a href="luxury.html">LUXURY HOLIDAYS</a></li>
+				
+				<li><a href="honeymoon.html">HONEYMOON PACKAGES</a></li>
+			</ul>
+		</div>
+		</nav>
+	<div class="topnav-right">
+		<nav>
+			<ul>
+				
+				
+				<li><a href="contact.php">CONTACT US</a></li>	
+				<li><a href="planholiday.php">PLAN MY HOLIDAYS</a></li>	
+
+			</ul>
+		</nav>
+	</div>	
+</div>
+<br>
+<br>
+
+<div class="slideshow-container">
+
+  <!-- Full-width images with number and caption text -->
+  <div class="mySlides fade"><br>
+    <div class="numbertext"></div>
+    <img src="maldivesimg1.jpg" style="width:50%" "height:50%" >
+    <div class="text">“Every day is a vacation in the Maldives!”</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext"></div>
+    <img src="maldivesimg2.jpg" style="width:50%" "height:50%">
+    <div class="text">“The Maldives is a beautiful place for a beautiful soul.”</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext"></div>
+    <img src="maldivesimg3.jpg" style="width:50%" "height:50%">
+    <div class="text">“Don’t listen to what they say. Go and see the Maldives.”</div>
+  </div>
+
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<!-- The dots/circles -->
+<div style="text-align:left; margin-left: 720px;">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+</div>
+
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+
+</script>
+
+<p>MALDIVES</p>
+<div class="paragraph">
+Standing in the Indian Ocean, Maldives is a mesmerising island, attracting tourists from all over the world. Hop on a vacation to this moon-shaped island with our Maldives family tour package, and get to explore some of the unexplored territories of this location.
+<br>
+
+<h4>MALDIVES TOURISM:</h4>
+<ul>
+  1. BEST TIME TO VISIT: November-April<br> 
+  2. IDEAL DURATION: 5-6 Days<br>
+  3. VISA: On Arrival<br> 
+</ul>
+</div>
+<br>
+
+<div class="tables">
+    <h2 style="text-decoration: underline;">BEST HOTELS TO ENJOY TOUR</h2>
+<table>
+  <tr>
+    <th>Maldives Family Packages</th>
+    <th>Duration</th>
+    <th>Price*</th>
+    <th>Inclusions</th>
+    <th>Photos</th>
+  </tr>
+  <tr>
+    <td>Relaxing Maldives Family Package</td>
+    <td>4 Nights/5 Days</td>
+    <td>Rs.80,000/-</td>
+    <td>Upto 3 Stars, Meals, Transfers</td>
+    <td><img src="maldivest1.jpg" class="thumbnail" width=100 height=80></td>
+  </tr>
+  <tr>
+    <td>The isle of Maldives and its coastal comforts</td>
+    <td>5 Nights/6 Days</td>
+    <td>Rs.126,000/-	</td>
+    <td>Upto 4 Stars, Flights, Meals, Sightseeing, Transfers</td>
+    <td><img src="maldivest2.jpg" class="thumbnail" width=100 height=80></td>
+  </tr>
+  <tr>
+    <td>Refreshing Maldives Family Tour Packages From IndiaE</td>
+    <td>4 Nights/5 Days</td>
+    <td>Rs.80,000/-</td>
+    <td>Upto 3 Stars, Meals, Sightseeing, Stay Included, Transfers</td>
+    <td><img src="maldivest3.webp" class="thumbnail" width=100 height=80></td>
+  </tr>
+  <tr>
+    <td>Maldives And Sri Lanka Family Holiday Package</td>
+    <td>5 Nights/6 Days</td>
+    <td>Rs.125,000/-</td>
+    <td>Upto 5 Stars, Meals, Transfers</td>
+    <td><img src="maldivest4.jpg" class="thumbnail" width=100 height=80></td>
+  </tr>
+  <tr>
+    <td>Magnificent Maldives Family Tour Package</td>
+    <td>4 Nights/5 Days</td>
+    <td>Rs.145,711/-	</td>
+    <td>Upto 5 Stars, Meals, Transfers, Entertainment Show, GST/VAT/ Service Charges</td>
+    <td><img src="maldivest5.jpg" class="thumbnail" width=100 height=80></td>
+  </tr>
+  <tr>
+    <td>Ecstatic Maldives Family Package</td>
+    <td>3 Nights/4 Days</td>
+    <td>Rs.60,500/-</td>
+    <td>Upto 3 Stars, Meals, Sightseeing, Stay Included, Transfers</td>
+    <td><img src="maldivest6.jpg" class="thumbnail" width=100 height=80></td>
+  </tr>
+
+    <tr>
+    <td>Fascinating Maldives Family Tour Package</td>
+    <td>3 Nights/4 Days</td>
+    <td>Rs.77,000/-</td>
+    <td>Upto 5 Stars, Meals, Airport Pickup-Drop, Cab Transfer, Complimentary Drinks, Spa Treatment, GST/VAT/ Service Charges, Entertainment Show</td>
+    <td><img src="maldivest7.webp" class="thumbnail" width=100 height=80></td>
+  </tr>
+</table>
+
+<br>
+<br>
+
+</body>
+</html>

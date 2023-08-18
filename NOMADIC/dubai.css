@@ -1,0 +1,345 @@
+body{
+ /* background-image: url('goabackground.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;*/
+ background-color: lightblue;
+}
+
+
+h1{
+	font-size: 50px;
+	padding:0px 120px;
+	text-decoration: underline;
+}
+
+.topnav a{
+	float:left;
+	text-align: center;
+	 font-size: 15px;
+	 
+}
+.topnav-right {
+  float: right;
+  font-size: 15px;
+}
+.header {
+	
+	text-align: center;
+	background:white
+	color: black;
+	font-size: 30px;
+	text-align: center;
+
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48,
+/* color : whitesmoke;*/
+
+}
+
+
+
+button{
+	border-radius: 9px;
+	background-color: #4CAF50;
+	color: white;
+	border: none;
+	padding: 3px 5px;
+	text-align: center;
+	font-size: 10px;
+	transition: 1s;
+}
+button:hover{
+	transform: scale(1.1);
+}
+.active{
+	background-color:white	
+  position: absolute;
+  animation-name: example;
+  animation-duration: 10s;
+  animation-delay: 2s;
+
+}
+
+nav {
+
+  position: fixed;
+  top: 80;
+  width: 80;
+  /*overflow: hidden;
+  float: left;*/
+  position: relative;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  /*display: flex;
+  justify-content: space-between;*/
+}
+
+nav li {
+	float: left;
+	margin-right: 10px;
+		font-size: 15px;
+}
+
+nav li:last-child{
+	margin-right: 0;
+}
+
+nav li a {
+	display: block;
+	color: black;
+	text-align: center;
+	padding: 3px 5px;
+	text-decoration: none;
+	transition: all 2s;
+	background-color: lightblue;
+ font-weight: bold;
+ border: 1px solid black;
+}
+
+nav li a:hover {
+	background-color: skyblue;
+	transform: scale(0.9);
+}
+.paragraph{
+	padding:0px 10px;
+}
+.h2{
+	padding: 0px 10px;
+}
+
+.fcontainer{
+    
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    position: relative;
+    text-align: center;
+    color: black;
+    text-decoration: underline;
+  }
+  
+   .fitem{
+    
+    /* background-color: red; */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    margin: 20px; 
+    width: 200px;
+    height: 200px;
+    
+    transition: all 0.5s ease-in-out;
+  }
+  .fitem:hover{
+    transform: scale(1.1);
+  }
+  .fitem img{
+    width: 100%;
+    height: 90%;
+    
+    
+  }
+  .fitem p{
+    text-align: center;
+  }
+
+sidenav {
+  height: 50%;
+  width: 100px;
+  position: fixed;
+  z-index: 1;
+  background-color: white;
+  overflow-x: hidden;
+  padding-top: 30px;
+}
+
+.sidenav a {
+  /*padding: 6px 8px 6px 16px;*/
+  text-decoration: none;
+  font-size: 25px;
+  color: black;
+  display: block;
+  padding-top: 30px;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+
+ main {
+        padding: 20px;
+        margin: 10px;
+    }
+
+    aside {
+        width: 200px;
+        border: 1px solid black;
+        padding: 10px;
+        margin: 10px;
+        float: left;
+        padding-top: 30px;
+    }
+
+.tables {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+ margin-left:20px;
+}
+
+td, th {
+  border: 1px solid black;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+h2{
+  text-align: center;
+  font-size: 40px;
+  text-decoration: underline;
+  padding-top: 0px;
+}
+legend{
+  text-decoration: underline;
+  font-size: 30px;
+ font-weight: bold;
+}
+
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none}
+img {vertical-align: left;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin-left: 480px;
+  margin-top: -10px;
+
+  
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+
+}
+
+/* Position the "next button" to the right */
+.next {
+  /*right: 0;*/
+  border-radius: 3px 0 0 3px;
+  margin-left: 460px;
+
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color:white;
+  font-size: 15px;
+  padding: 4px 5px;
+  position: absolute;
+  bottom: 1px;
+  width: 100%;
+  text-align: left;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: black;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+p{
+	font-size: 40px;
+  margin-left: 40px;
+  text-decoration: underline;
+  font-weight: bold;
+  text-align: center;
+}
+.paragraph{
+  margin-left: 20px;
+}
+
+.thumbnail { 
+/*padding:20px;*/
+display:block; 
+/*z-index:999; */
+cursor: pointer; 
+-webkit-transition-property: all; 
+-webkit-transition-duration: 0.1s; 
+-webkit-transition-timing-function: ease; 
+} 
+
+/*change the number below to scale to the appropriate size*/ 
+.thumbnail:hover { 
+transform: scale(1.6); 
+
+}
+

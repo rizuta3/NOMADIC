@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Page 1</title>
+</head>
+<body>
+  <form method="post" action="page2.html">
+    <input type="submit" name="submit" value="Go to Page 2">
+  </form>
+  
+  <?php
+  // Check if the form was submitted
+  if(isset($_POST['submit'])){
+    // Redirect to page2.html
+    header("Location: page2.html");
+    exit(); // Ensure that no other code is executed
+  }
+  ?>
+</body>
+</html>

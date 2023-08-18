@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CSS</title>
+	<link rel="stylesheet" type="text/css" href="kerala.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+</head>
+
+<body>
+		<h1>NOMADIC :   FREEDOM TO ENJOY YOURSELF</h1>
+		<div class="topnav">
+		<nav>	
+		<ul>
+		        <li><a href="home.php">HOME</a></li> 
+				<li><a href="family.html">FAMILY PACKAGES</a></li>
+				<li><a href="luxury.html">LUXURY HOLIDAYS</a></li>
+				<li><a href="honeymoon.html">HONEYMOON PACKAGES</a></li>
+			</ul>
+		</div>
+		</nav>
+	<div class="topnav-right">
+		<nav>
+			<ul>
+				
+				
+				<li><a href="contact.php">CONTACT US</a></li>	
+				<li><a href="planholiday.php">PLAN MY HOLIDAYS</a></li>	
+
+			</ul>
+		</nav>
+	</div>	
+</div>
+<br>
+<br>
+
+<div class="slideshow-container">
+
+  <!-- Full-width images with number and caption text -->
+  <div class="mySlides fade"><br>
+    <div class="numbertext"></div>
+    <img src="keralaimg1.jpg" style="width:50%" "height:50%" >
+    <div class="text">“The sun is setting over Kerala, but this vacation is far from over.”</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext"></div>
+    <img src="keralaimg2.webp" style="width:50%" "height:50%">
+    <div class="text">"“There’s nothing better than a walk on the beach in Kerala.”</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext"></div>
+    <img src="keralaimg3.jpg" style="width:50%" "height:50%">
+    <div class="text">“Good things come to those who book flights to Kerala.”</div>
+  </div>
+
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<!-- The dots/circles -->
+<div style="text-align:left; margin-left: 720px;">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+</div>
+
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+
+</script>
+
+<p>KERALA</p>
+<div class="paragraph">
+Blessed with sandy beaches and lush hills, our family tour packages for Kerala are the best choice to help you explore this state which is a treasure chest of natural wonders, vibrant culture and man-made feats. Kerala, located on the Malabar Coast, is a state in southern India, bordered by the Lakshadweep Sea, Karnataka and Tamil Nadu. Kerala family packages are ideal for exploring all aspects of God’s own country. Whether you are on a spiritual tour, or want to enjoy your leisure time on sandy beaches, or want to capture beautiful moments with spectacular backdrop of marvelous landscape, our tour packages are meant to make your trip memorable.<br><br>
+Grab our package to explore the most of God's Own Country with your loved ones!
+<br>
+
+<h4>KERALA TOURISM:</h4>
+<ul>
+  1. BEST TIME TO VISIT: July-March<br> 
+  2. IDEAL DURATION: 5-6 Days<br>
+  3. VISA: N/A<br> 
+</ul>
+</div>
+<br>
+
+ <div class="tables">
+    <h2 style="text-decoration: underline;">BEST HOTELS TO ENJOY TOUR</h2>
+<table>
+  <tr>
+    <th>Kerala Family Packages</th>
+    <th>Duration</th>
+    <th>Price*</th>
+    <th>Inclusions</th>
+    <th>Photos</th>
+  </tr>
+  <tr>
+    <td>Best Selling Alleppey-Munnar Kerala Weekend Tour</td>
+    <td>3 Nights/4 Days</td>
+    <td>Rs.13,020/-</td>
+    <td>Upto 3 Stars, Meals, Sightseeing, Houseboat, Private Cab, Airport Pickup-Drop</td>
+    <td><img src="keralat1.jpeg" class="thumbnail" width=100 height=80></td>
+  </tr>
+
+
+  <tr>
+    <td>Trip To Mesmerising Munnar</td>
+    <td>3 Nights/4 Days</td>
+    <td>Rs.14,570/-</td>
+    <td>Upto 3 Stars, Meals, Sightseeing, Stay Included, Transfers</td>
+    <td><img src="keralat2.jpg" class="thumbnail" width=100 height=80></td>
+  </tr>
+
+
+  <tr>
+    <td>Hills & Houseboat: Munnar and Alleppey Honeymoon Package</td>
+    <td>5 Nights/6 Days</td>
+    <td>Rs.21,280/-</td>
+    <td>Upto 3 Stars, Meals, Sightseeing, Transfers, Honeymoon freebies</td>
+    <td><img src="keralat3.jpg" class="thumbnail" width=100 height=80></td>
+  </tr>
+
+
+  <tr>
+    <td>Vibrant Kochi Munnar Honeymoon Tour Package</td>
+    <td>3 Nights/4 Days</td>
+    <td>Rs.14,571/-</td>
+    <td>Upto 3 Stars, Meals, Sightseeing, GST/VAT/ Service Charges, Transfers</td>
+    <td><img src="keralat4.jpg" class="thumbnail" width=100 height=80></td>
+  </tr>
+
+
+  <tr>
+    <td>Mesmerizing Getaway To Kochi/td>
+    <td>1 Nights/2 Days</td>
+    <td>Rs.4,180/-</td>
+    <td>Upto 3 Stars, Meals, Sightseeing, Stay Included, Transfers</td>
+    <td><img src="keralat5.jpg" class="thumbnail" width=100 height=80></td>
+  </tr>
+
+
+  <tr>
+    <td>Kerala Wayanad Weekend Holiday</td>
+    <td>2 Nights/3 Days</td>
+    <td>Rs.7,840/-</td>
+    <td>Upto 3 Stars, Meals, Sightseeing, Private Cab, Airport Pickup-Drop</td>
+    <td><img src="keralat6.jpg" class="thumbnail" width=100 height=80></td>
+  </tr>
+
+</table>
+
+<br>
+<br>
+
+</body>
+</html>

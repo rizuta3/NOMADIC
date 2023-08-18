@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CSS</title>
+	<link rel="stylesheet" type="text/css" href="greece.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+</head>
+
+<body>
+		<h1>NOMADIC : FREEDOM TO ENJOY YOURSELF</h1>
+		<div class="topnav">
+		<nav>	
+		<ul>
+		        <li><a href="home.php">HOME</a></li> 
+			
+				<li><a href="family.html">FAMILY PACKAGES</a></li>
+				<li><a href="luxury.html">LUXURY HOLIDAYS</a></li>
+			
+				<li><a href="honeymoon.html">HONEYMOON PACKAGES</a></li>
+			</ul>
+		</div>
+		</nav>
+	<div class="topnav-right">
+		<nav>
+			<ul>
+				
+				
+				<li><a href="contact.php">CONTACT US</a></li>	
+				<li><a href="planholiday.php">PLAN MY HOLIDAYS</a></li>	
+
+			</ul>
+		</nav>
+	</div>	
+</div>
+<br>
+<br>
+
+<div class="slideshow-container">
+
+  <!-- Full-width images with number and caption text -->
+  <div class="mySlides fade"><br>
+    <div class="numbertext"></div>
+    <img src="greeceimg1.jpg" style="width:50%" "height:50%" >
+    <div class="text">“Greece was a muse. ..."</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext"></div>
+    <img src="greeceimg2.jpg" style="width:50%" "height:50%">
+    <div class="text">"The problem with Greece is that she’s just too beautiful."</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext"></div>
+    <img src="greeceimg3.webp" style="width:50%" "height:50%">
+    <div class="text">"Greece is the most magical place on Earth."</div>
+  </div>
+
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<!-- The dots/circles -->
+<div style="text-align:left; margin-left: 720px;">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+</div>
+
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+
+</script>
+
+<p>GREECE</p>
+<div class="paragraph">
+One of the most splendid European countries, Greece has over 2000 islands out of which 160 are inhabited by people. Full of rich historical and architectural marvels, ancient ruins, golden mountains, and mammoth beaches, this country is often addressed as the ‘Cradle of Ancient Civilization.’ Greece family packages are booked throughout the year because this destination is much loved by people from all over the world.
+<br>
+
+<h4>GREECE TOURISM:</h4>
+<ul>
+  1. BEST TIME TO VISIT: June-September<br> 
+  2. IDEAL DURATION: 5-6 Days<br>
+  3. VISA: On Arrival<br> 
+</ul>
+</div>
+<br>
+
+ <div class="tables">
+    <h2 style="text-decoration: underline;">BEST HOTELS TO ENJOY TOUR</h2>
+<table>
+  <tr>
+    <th> Greece Family Packages</th>
+    <th>Duration</th>
+    <th>Price*</th>
+    <th>Inclusions</th>
+    <th>Photos</th>
+  </tr>
+  <tr>
+    <td>Ecstatic Greece Honeymoon Package</td>
+    <td>6 Nights/7 Days</td>
+    <td>Rs.68,250/-</td>
+    <td>Upto 3 Stars, Meals, Sightseeing, Stay Included, Transfers</td>
+    <td><img src="greecet1.jpeg" class="thumbnail" width=100 height=80></td>
+  </tr>
+  <tr>
+    <td>Santorini Honeymoon Package</td>
+    <td>5 Nights/6 Days</td>
+    <td>Rs.62,999/-</td>
+    <td>Upto 4 Stars, Meals, Sightseeing, Stay Included, Transfers</td>
+    <td><img src="greecet2.jpg" class="thumbnail" width=100 height=80></td>
+  </tr>
+  <tr>
+    <td>Amazing Santorini Tour Package</td>
+    <td>2 Nights/3 Days</td>
+    <td>Rs.24,150/-</td>
+    <td>Upto 4 Stars, Meals, Sightseeing, Stay Included, Transfers</td>
+    <td><img src="greecet3.jpg" class="thumbnail" width=100 height=80></td>
+  </tr>
+  <tr>
+    <td>Romantic Trip To Santorini Islandy</td>
+    <td>2 Nights/3 Days</td>
+    <td>Rs.26,250/-</td>
+    <td>Upto 4 Stars, Meals, Sightseeing, Stay Included, Transfers</td>
+    <td><img src="greecet4.jpg" class="thumbnail" width=100 height=80></td>
+  </tr>
+  <tr>
+    <td>Santorini Tour: An Amazing Trip</td>
+    <td>4 Nights/5 Days</td>
+    <td>Rs.47,250/-</td>
+    <td>Upto 3 Stars, Meals, Sightseeing, Stay Included, Transfers</td>
+    <td><img src="greecet5.jpg" class="thumbnail" width=100 height=80></td>
+  </tr>
+  <tr>
+    <td>Uber Romantic Greece Honeymoon Package</td>
+    <td>9 Nights/10 Days</td>
+    <td>Rs.89,249/-</td>
+    <td>Upto 4 Stars, Meals, Sightseeing, Stay Included, Transfers</td>
+    <td><img src="greecet6.jpg" class="thumbnail" width=100 height=80></td>
+  </tr>
+
+  <tr>
+    <td>Gorgeous Greece Sightseeing Tour Package</td>
+    <td>6 Nights/7 Days</td>
+    <td>Rs.68,247/-</td>
+    <td>Upto 3 Stars, Meals, Sightseeing, Stay Included, Transfers</td>
+    <td><img src="greecet7.webp" class="thumbnail" width=100 height=80></td>
+  </tr>
+</table>
+
+<br>
+<br>
+</body>
+</html>
